@@ -119,5 +119,126 @@ namespace Exercise2
 
             Assert.AreEqual("xiv", result);
         }
+
+        [Test]
+        public void convert_number_eigthteen_to_xviii()
+        {
+            var numberToConvert = 18;
+
+            var converter = new RomanConverter();
+            var result = converter.Convert(numberToConvert);
+
+            Assert.AreEqual("xviii", result);
+        }
+
+        [Test]
+        public void convert_number_nineteen_to_xix()
+        {
+            var numberToConvert = 19;
+
+            var converter = new RomanConverter();
+            var result = converter.Convert(numberToConvert);
+
+            Assert.AreEqual("xix", result);
+        }
+
+        [Test]
+        public void convert_number_twenty_to_xx()
+        {
+            var numberToConvert = 20;
+
+            var converter = new RomanConverter();
+            var result = converter.Convert(numberToConvert);
+
+            Assert.AreEqual("xx", result);
+        }
+
+        [Test]
+        public void convert_number_fortynine_to_xlix()
+        {
+            var numberToConvert = 49;
+
+            var converter = new RomanConverter();
+            var result = converter.Convert(numberToConvert);
+
+            Assert.AreEqual("xlix", result);
+        }
+
+        [Test]
+        public void convert_number_50_to_l()
+        {
+            var numberToConvert = 50;
+
+            var converter = new RomanConverter();
+            var result = converter.Convert(numberToConvert);
+
+            Assert.AreEqual("l", result);
+        }
+
+        [Test]
+        public void convert_number_100_to_c()
+        {
+            var numberToConvert = 100;
+
+            var converter = new RomanConverter();
+            var result = converter.Convert(numberToConvert);
+
+            Assert.AreEqual("c", result);
+        }
+
+        [Test]
+        public void convert_number_101_to_ci()
+        {
+            var numberToConvert = 101;
+
+            var converter = new RomanConverter();
+            var result = converter.Convert(numberToConvert);
+
+            Assert.AreEqual("ci", result);
+        }
+
+        [Test]
+        public void convert_number_449_to_cdxlix()
+        {
+            var numberToConvert = 449;
+
+            var converter = new RomanConverter();
+            var result = converter.Convert(numberToConvert);
+
+            Assert.AreEqual("cdxlix", result);
+        }
+
+        [Test]
+        public void convert_number_1001_to_mi()
+        {
+            var numberToConvert = 1001;
+
+            var converter = new RomanConverter();
+            var result = converter.Convert(numberToConvert);
+
+            Assert.AreEqual("mi", result);
+        }
+
+        [Test]
+        public void convert_number_3001_to_mmmi()
+        {
+            var numberToConvert = 3001;
+
+            var converter = new RomanConverter();
+            var result = converter.Convert(numberToConvert);
+
+            Assert.AreEqual("mmmi", result);
+        }
+
+        [Test]
+        public void convert_number_3949_to_mmmcmxlix()
+        {
+            var numberToConvert = 3949;
+
+            var converter = new RomanConverter();
+            var result = converter.Convert(numberToConvert);
+
+            Assert.AreEqual("mmmcmxlix", result);
+        }
     }
 }
